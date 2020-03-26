@@ -1,0 +1,15 @@
+import numpy as np
+import math
+
+def rndgenerator(seed, n):
+    pi = math.pi
+    x = np.linspace(0, 1, n)
+    y = np.cos(2 * pi * x)
+    
+    np.random.seed(seed)
+    e = np.random.random([n,])
+    
+    for i in range(0, n):
+        y[i] = y[i] + ((-1)**i)*(0.1+e[i])
+        
+    return x, y

@@ -239,11 +239,13 @@ $$ \alpha_n \geq 0, \quad \text{for} \  n = 1, 2, ..., N $$
 那么我们就可以将硬间隔SVM问题转化为软间隔SVM问题，这里我们需要引入松弛变量 $\xi$ ，
 来度量忽略某些错误的程度：
 
-$$ \xi=
+$$
+\xi=
 \begin{cases}
-0& \text{when} \  y(w^T x + b) \geq 1 \\
-1 - y(w^T x + b)& \text{otherwise}
-\end{cases}$$
+0 & \text{when} \  y(w^T x + b) \geq 1 \\
+1 - y(w^T x + b) & \text{otherwise}
+\end{cases}
+$$
 
 那么我们的问题就变成了：
 

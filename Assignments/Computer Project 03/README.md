@@ -25,7 +25,6 @@ python main.py
 
 - AT&T Face Images
 
-39965.30311 Acc: 0.79750
 |      |             |
 | ---- | ----------- |
 | Loss | 39965.30311 |
